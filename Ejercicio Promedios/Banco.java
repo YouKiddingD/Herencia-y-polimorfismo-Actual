@@ -19,9 +19,10 @@ public class Banco
       int i=0;
       for(CuentaBancaria b:cuentas)
       {
-          prom=(prom+b.saldo)/(i+1);
+          prom=prom+b.saldo;
           i++;
       }
+      prom=prom/i;
       return prom;
   }
 }

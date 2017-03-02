@@ -2,9 +2,24 @@ import java.util.ArrayList;
 public class Planeta
 {
    ArrayList<Pais> p;
-   Public Planeta(Pais pa)
+   public Planeta()
    {
        p=new ArrayList<Pais>();
-       p.add(pa);
+   }
+   public void agregarPais(Pais pa)
+   {
+     p.add(pa);
+   }
+   public float calculaPromedioHabitantes()
+   {
+       float prom=0;
+       int i=0;
+       for(Pais pa:p)
+       {
+           prom=prom+pa.habitantes;
+           i++;
+       }
+       prom=prom/i;
+       return prom;
    }
 }
