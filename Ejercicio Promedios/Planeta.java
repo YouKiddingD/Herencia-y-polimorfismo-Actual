@@ -10,6 +10,8 @@ public class Planeta implements Medible
    {
      p.add(pa);
    }
+   
+   @Override
    public float getMedicion(Medible objeto[])
    {
        float prom=0;

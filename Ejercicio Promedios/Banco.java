@@ -13,11 +13,11 @@ public class Banco implements Medible
       cuentas.add(b);
   }
   
-  public float getMedicion(Medible objeto[])
+  public float getMedicion(Medible obj)
   {
       float prom=0;
       int i=0;
-      for(Medible b:objeto)
+      for(CuentaBancaria b:cuentas)
       {
           prom=prom+b.saldo;
           i++;

@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+public class Main
+{
+
+    public static void main(String [] args)
+    {
+        ArrayList<Alumno> alumnos;
+        alumnos = new ArrayList <Alumno>();
+        alumnos.add(new Alumno(150));
+        alumnos.add(new Alumno(100));
+        alumnos.add(new Alumno(250));
+        alumnos.add(new Alumno(350));
+        alumnos.add(new Alumno(40));
+        
+        Alumno[] arrAlumnos;
+        arrAlumnos=new Alumno[alumnos.size()];
+        arrAlumnos= alumnos.toArray(arrAlumnos);
+        Arrays.sort(arrAlumnos);
+        System.out.println("contendio del ArrayList: ");
+        for (Alumno alu: alumnos)
+            System.out.println(" "+alu);
+        System.out.println("contendio del arreglo: ");
+        for (Alumno alu: arrAlumnos)
+             System.out.println(" " + alu);
+    }
+}
