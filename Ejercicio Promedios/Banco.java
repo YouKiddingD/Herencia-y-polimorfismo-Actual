@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Banco
+public class Banco implements Medible
 {
   ArrayList <CuentaBancaria> cuentas;
   public Banco()
@@ -13,11 +13,11 @@ public class Banco
       cuentas.add(b);
   }
   
-  public float calcularSaldoPromedio()
+  public float getMedicion(Medible objeto[])
   {
       float prom=0;
       int i=0;
-      for(CuentaBancaria b:cuentas)
+      for(Medible b:objeto)
       {
           prom=prom+b.saldo;
           i++;

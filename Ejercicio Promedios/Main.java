@@ -12,7 +12,9 @@ public class Main
        b1.agregarCuenta(c1);
        b1.agregarCuenta(c2);
        b1.agregarCuenta(c3);
-       System.out.println(b1.calcularSaldoPromedio());
+       arrCuentas= new CuentaBancaria[c1.size];
+       arrCuentas=c1.toArray(arrCuentas);
+       System.out.println(c1.getMedicion(arrCuentas));
        Planeta p1= new Planeta();
        Pais pa1=new Pais(25000000);
        Pais pa2=new Pais(32000000);

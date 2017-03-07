@@ -1,5 +1,5 @@
 import java.util.ArrayList; 
-public class Planeta
+public class Planeta implements Medible
 {
    ArrayList<Pais> p;
    public Planeta()
@@ -10,7 +10,7 @@ public class Planeta
    {
      p.add(pa);
    }
-   public float calculaPromedioHabitantes()
+   public float getMedicion(Medible objeto[])
    {
        float prom=0;
        int i=0;
